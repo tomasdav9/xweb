@@ -1,0 +1,89 @@
+@import 'variables.css';
+
+body {
+  background-color: white;
+  color: var(--text-color);
+  width: var(--page-width);
+  font-family: var(--font-family);
+  width: 100%;
+    margin: 0 auto;
+    display:block;
+    padding: 2em;
+}
+
+.shadow-container {
+    background-color: var(--background-color);
+    height: 100%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.headline1 {
+    color: var(--headline-color);
+    font-size: 6em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.headline2 {
+    color: var(--headline-color);
+    font-size: 2em;
+    margin: 0;
+}
+
+.headline3 {
+    color: var(--headline-color);
+    font-size: 1.5em;
+    margin: 0;
+
+}
+.header-text {
+    color: var(--header-color);
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.text-start-circle {
+    background-color: var(--background-color);
+    color: var(--headline-color);
+    font-size: 1.5em;
+    border: 2px solid;
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    text-align: center;
+    line-height: 1em;
+    margin-right: 0.5em;
+
+}
+
+.header {
+    background-color: white;
+    color: var(--text-color);
+    height: 3em;
+    display: block;
+    padding: 0 6em;
+}
+
+.inline-menu {
+    display: flex;
+    margin-top: 3.5em;
+    padding: 0;
+    height: 3em;
+    /*justify-content: space-between;*/
+}
+.inline-menu a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin-right: 1.5em;
+}
+.container {
+    width: 100%;
+    max-width: 1140px; /* Adjust this value to your desired maximum width */
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
