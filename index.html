@@ -7,40 +7,52 @@
     <meta name="description" content="Jane Doe | Full-Stack developer">
     <meta name="keywords" content="Jane Doe, Full-Stack developer, web developer, webdesign, webdesigner">
     <link rel="stylesheet" href="css/global.css">
-    <title>Jane Doe | Full-Stack developer</title>
+    <title>Tomas David</title>
 </head>
 
 <body>
     <div class="">
         <div class="header">
-            <p class="headline3">Hello, My name is</p>
-            <p class="headline1">Jane Doe</p>
-            <p class="header-text">Full-Stack Developer</p>
-            <p>I design and develop services for customer of all sizes, specializing in creating stylish, modern
-                websites and online stores.</p>
-            <div class="inline-menu">
-                <a href="#biography">Biography</a>
-                <a href="#what-i-do">What I do?</a>
-                <a href="#awards">Awards</a>
-                <a href="#epxerience">Experience</a>
-                <a href="#my-portofolio">My portofolio</a>
-                <a href="#contact">Contact</a>
+            <div class="row">
+                <div class="col-large">
+                    <p class="headline3">Hello, My name is</p>
+                    <p class="headline1">Jane Doe</p>
+                    <p class="header-text">Full-Stack Developer</p>
+                    <p>I design and develop services for customer of all sizes, specializing in creating stylish, modern
+                        websites and online stores.</p>
+                    <div class="inline-menu">
+                        <a href="#biography">Biography</a>
+                        <a href="#what-i-do">What I do?</a>
+                        <a href="#awards">Awards</a>
+                        <a href="#epxerience">Experience</a>
+                        <a href="#my-portofolio">My portofolio</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                <div class="col-small">
+                    <img src="img/avatar.svg" alt="Jane Doe" class="">
+                </div>
             </div>
         </div>
         <div class="block shadow-container">
             <div class="container">
                 <!-- Biography -->
-                <div class="row">
+                <div class="row" id="biography">
                     <div class="col-small">
-                        <img src="img/avatar.svg" alt="Jane Doe">
+                        <div class="avatar-container">
+                            <img src="img/avatar.svg" alt="Jane Doe">
+                        </div>
 
-                        <div>
-                            <h3>Jane Doe</h3>
-                            <p class="header-text">Full-Stack Developer</p>
+                        <div class="text-container">
+                            <p class="headline3 text-bold">Jane Doe</p>
+                            <p class="text-header-color text-small">Full-Stack Developer</p>
                         </div>
                     </div>
-                    <div class="col-large">
-                        <h2>Biography</h2>
+                    <div class="col-large" id="biography">
+                        <h3 class="headline3 text-bold">
+                            <span class="headline-circle"></span>
+                            Biography
+                        </h3>
                         <p>
                             I'm a Freelancer Front-end Developer with over 3 years of experience. I'm from San
                             Francisco. I
@@ -59,27 +71,190 @@
                         </p>
                     </div>
                 </div>
-                <hr/>
+                <hr />
                 <!-- What I do cards -->
-                <div style="width: 100%;">
-                    <h2 class="headline3">What I do?</h2>
-                    <div class="row">
+                <div style="width: 100%;" id="what-i-do">
+                    <h2 class="headline3">
+                        <span class="headline-circle"></span>What I do?
+                    </h2>
+                    <div class="row margin-top-3">
                         <div class="cards">
                             <div class="card">
-                                <p class="headline3">Web Design</p>
+                                <div class="card-icon">
+                                    <img src="img/pencil-alt-solid.svg" alt="Web Design">
+                                </div>
+                                <div class="card-text">
+                                    <h2>Web Design</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-icon">
+                                    <img src="img/desktop-solid.svg" alt="Web Development">
+                                </div>
+                                <div class="card-text">
+                                    <h2>Web Development</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-icon">
+                                    <img src="img/bullseye-solid.svg" alt="Seo Marketing">
+                                </div>
+                                <div class="card-text">
+                                    <h2>Seo Marketing</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Awards -->
+                <div style="width: 100%;" id="awards">
+                    <h2 class="headline3">
+                        <span class="headline-circle"></span>Awards
+                    </h2>
+                    <div class="row margin-top-1">
+                        <div class="cards">
+                            <div class="card">
+                                <img class="card-award-icon" src="img/trophy-solid.svg" alt="Creative Designer">
+                                <div class="card-text">
+                                    Creative Designer
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img class="card-award-icon" src="img/trophy-solid.svg" alt="Yearly Best Performer">
+                                <div class="card-text">
+                                    Yearly Best Performer
+                                </div>
                             </div>
                             <div class="card">
-                                <p class="headline3">Web Development</p>
+                                <img class="card-award-icon" src="img/trophy-solid.svg" alt="Best Learner Award">
+                                <div class="card-text">
+
+                                    Best Learner Award
+                                </div>
                             </div>
-                            <div class="card">
-                                <p class="headline3">Web Design</p>
-                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="block">
+            <div class="container">
+                <!-- Experience -->
+                <div style="width: 100%;" id="experience">
+                    <h2 class="headline3">
+                        <span class="headline-circle"></span>Experience
+                    </h2>
+                    <!-- Google LLC - Sr. Front-End Enginner -->
+                    <div class="list">
+                        <div class="row">
+                            <div class="col-small">
+                                <div class="list-prefix">
+                                    <p>Feb 2021 - Present</p>
+                                    <span class="list-prefix-fulltime">
+                                        Full Time
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="list-divider"></div>
+                            <div class="col-large">
+                                <div class="list-header">
+                                    <h2 class="list-title">
+                                        Google LLC - Sr. Front-end Engineer
+                                    </h2>
+                                </div>
+                                <div class="list-body">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                        irure
+                                        dolor.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ridian IT - Visual Designer -->
+                <div class="list">
+                    <div class="row">
+                        <div class="col-small">
+                            <div class="list-prefix">
+                                <p>Mar 2020 - Present</p>
+                                <span class="list-prefix-parttime">
+                                    Part Time
+                                </span>
+                            </div>
+                        </div>
+                        <div class="list-divider"></div>
+                        <div class="col-large">
+                            <div class="list-header">
+                                <h2 class="list-title">
+                                    Ridian IT - Visual Designer
+                                </h2>
+                            </div>
+                            <div class="list-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure
+                                    dolor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- IB Themes - Animation Artist -->
+                <div class="list">
+                    <div class="row">
+                        <div class="col-small">
+                            <div class="list-prefix">
+                                <p>Jan 2019 - Present</p>
+                                <span class="list-prefix-fulltime">
+                                    Full Time
+                                </span>
+                            </div>
+                        </div>
+                        <div class="list-divider"></div>
+                        <div class="col-large">
+                            <div class="list-header">
+                                <h2 class="list-title">
+                                    IB Themes - Animation Artist
+                                </h2>
+                            </div>
+                            <div class="list-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure
+                                    dolor.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
+
 </body>
 
 </html>
