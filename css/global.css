@@ -6,17 +6,14 @@ body {
     width: var(--page-width);
     font-family: var(--font-family);
     width: 100%;
-    /* margin: 0 auto; */
     display: flex;
     flex-direction: column;
-    /* padding: 2em; */
 
 }
 
 .shadow-container {
     background-color: var(--background-color);
     height: 100%;
-    /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); */
     width: 100%;
 }
 
@@ -67,7 +64,8 @@ body {
     background-color: white;
     color: var(--text-color);
     display: block;
-    padding: 0 6em;
+    padding-top: 1em;
+    padding-left: 1em;
     width: 100%;
     min-height: 3em;
     margin-left: auto;
@@ -75,11 +73,11 @@ body {
 }
 
 .inline-menu {
-    display: flex;
+    display: grid;
     margin-top: 3.5em;
     padding: 0;
     height: 3em;
-    /*justify-content: space-between;*/
+    grid-template-columns: auto auto auto auto auto auto;
 }
 
 .inline-menu a {
@@ -120,6 +118,7 @@ body {
     flex-direction: row;
     min-width: 360px;
     width: 100%;
+    max-width: 1140px;
 }
 
 .col-small {
@@ -162,6 +161,43 @@ body {
     flex-direction: column;
 }
 
+.awards {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+.award {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: 300px;
+}
+
+.portfolio-cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.portfolio-card {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 10px;
+    padding: 15px;
+    max-width: 100%;
+}
+
+.portfolio-text {
+    text-align: left;
+}
+
 .cards {
     justify-content: space-between;
     display: flex;
@@ -178,8 +214,8 @@ body {
     margin: 10px;
     padding: 15px;
     width: 300px;
-    /* Adjust the width as needed */
 }
+
 
 .card-icon {
     padding: 0 10px 50px 10px;
@@ -203,10 +239,28 @@ body {
     left: 80px;
 }
 
+.portfolio-image {
+    object-fit: fill;
+    /* overflow: auto; */
+    display: block;
+
+}
+
+.portfolio-image img {
+
+    width: 100%;
+    height: 100%;
+    max-height: 360px;
+    max-width: 640px;
+}
+
 .card-text {
     text-align: center;
 }
 
+.award-text {
+    text-align: center;
+}
 .card p {
     text-align: left;
 }
@@ -292,48 +346,42 @@ body {
 }
 
 .list {
-    display: inline-block;
-    /* Makes the card a flex container */
+    display: flex;
     margin: 10px;
-    /* Adds some margin between the cards */
     border-radius: 15px;
-    background-color: var(--background-color);
-    flex-direction: row;
+    flex-direction: column;
+    
 }
 
+.list-item {
+    background-color: var(--background-color);
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin: 10px;
+}
 .list-header {
     display: flex;
-    /* Makes the header a flex container */
     align-items: center;
-    /* Aligns the content of the header horizontally */
     justify-content: space-between;
-    /* Distributes the content of the header with space in between */
     padding-bottom: 10px;
-    /* Adds padding to the bottom of the header */
     font-weight: bold;
-    /* Makes the header text bold */
 }
 
 .list-title {
     font-size: 18px;
-    /* Sets the font size for the card title */
     font-weight: bold;
-    /* Makes the card title bold */
     margin-bottom: 0.5em;
     margin-top: 1em;
     color: var(--headline-color);
-    /* Adds some margin to the bottom of the card title */
 }
 
 .list-subtitle {
     font-size: 14px;
-    /* Sets the font size for the card subtitle */
     color: #666;
-    /* Sets the color of the card subtitle to a lighter gray */
 }
 
 .list-body {
-    /* Inherits styles from parent .card */
+    
 }
 
 .list-prefix {
@@ -342,14 +390,18 @@ body {
     position: relative;
     padding: 0.5em;
     margin-top: 1em;
+    border-right: 1px solid rgba(177, 177, 177, 0.191);
 }
-
+.list-suffix {
+    max-width: 70%;
+}
 .list-prefix-fulltime {
     background-color: var(--header-color);
     color: white;
     border-radius: 5px;
     padding: 5px;
 }
+
 .list-prefix-parttime {
     background-color: rgb(65, 65, 65);
     color: white;
@@ -362,4 +414,240 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
 
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.icon img {
+    width: 1.5em;
+    margin-right: 1em;
+}
+
+.text-input {
+    width: 100%;
+    padding: 1em;
+    margin: 0.5em 0;
+    border: 1px solid #ccc;
+}
+
+.margin-right-3 {
+    margin-right: 3em;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.button {
+    background-color: rgb(65, 65, 65);
+    width: 10em;
+    color: white;
+    padding: 1em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.map {
+    margin-top: 1em;
+    width: calc(100% - 2em);
+    border: 2px solid white;
+    margin-bottom: 1em;
+}
+
+.footer {
+    height: 3em;
+}
+
+.footer-body {
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 50%;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+}
+.social-icons img {
+    width: 2em;
+    margin-right: 1em;
+}
+
+.copyright {
+    position: relative;
+    float: inline-end;
+    margin-right: 1em;
+}
+
+#header-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* overflow: hidden; */
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+#contact {
+    width: 100%;
+    padding-left: 1em;
+}
+
+.padding-6 {
+    padding: 0 6em;
+}
+
+.padding-4 {
+    padding: 0 4em;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+}
+.biography-icon {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.form-row {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 37px;
+    max-width: 100%;
+}
+/* MEDIA QUERIES */
+@media (max-width: 1199px){
+    .container {
+        padding: 1em;
+    }
+}
+@media (max-width: 960px) {
+    .card {
+        max-width: 100% !important;
+        width: unset;
+    }
+
+    .cards {
+        flex-direction: column !important;
+    }
+
+    .award {
+        width: 100% !important;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col-small,
+    .col-medium,
+    .col-large {
+        max-width: 100% !important;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .portfolio-cards {
+        grid-template-columns: auto auto;
+        column-gap: 10px;
+    }
+
+    .avatar-container
+    {
+        width: 40%;
+    }
+    .biography-icon {
+    }
+    #header-avatar {
+        display: none;
+    }
+    .container {
+        /* padding: 0.5em; */
+    }
+    .list-suffix {
+        max-width: 100%;
+    }
+    .form-row
+    {
+        grid-template-columns: 100%;
+    }
+}
+
+@media (max-width: 559px) {
+    .header {
+        margin-bottom: 2em;
+    }
+    .inline-menu {
+        grid-template-columns: auto auto auto;
+        margin-bottom: 1em;
+    }
+    .inline-menu a {
+        margin-bottom: 0.5em;
+        border-radius: 5px;
+        padding: 0.5em;
+        background-color: var(--header-color);
+        text-align: center;
+        color: black;
+    }
+    .awards
+    {
+        flex-direction: column;
+    }
+    .award {
+        width: unset !important;
+        flex-direction: row;
+    }
+    .award-text {
+        margin-left: 1em;
+        position: relative;
+        padding-top: 1.5em;
+    }
+    .container {
+        padding: 0.5em!important;
+    }
+    .list-item{
+        grid-template-columns: 100%;
+        padding: 0.5em 1em;
+    }
+    .list-prefix {
+        text-align: left;
+        margin-top: 0;
+        padding: 0;
+        margin-bottom: 0.5em;
+    }
+    .list-header
+    {
+        padding: 0;
+    }
+    .portfolio-cards {
+        grid-template-columns: auto;
+    }
+    .text-input
+    {
+        width: 100%;
+        padding: 1em 0.5em;
+    }
+    .footer-body {
+        grid-template-columns: auto;
+    }
+    .social-icons
+    {
+        left: 35%;
+        position: relative;
+    }
 }

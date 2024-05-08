@@ -11,10 +11,10 @@
 </head>
 
 <body>
-    <div class="">
+    <main>
         <div class="header">
             <div class="row">
-                <div class="col-large">
+                <div class="col-large" style="padding-left: 3em;">
                     <p class="headline3">Hello, My name is</p>
                     <p class="headline1">Jane Doe</p>
                     <p class="header-text">Full-Stack Developer</p>
@@ -24,28 +24,32 @@
                         <a href="#biography">Biography</a>
                         <a href="#what-i-do">What I do?</a>
                         <a href="#awards">Awards</a>
-                        <a href="#epxerience">Experience</a>
+                        <a href="#experience">Experience</a>
                         <a href="#my-portofolio">My portofolio</a>
                         <a href="#contact">Contact</a>
                     </div>
                 </div>
-                <div class="col-small">
-                    <img src="img/avatar.svg" alt="Jane Doe" class="">
+                <div class="col-small" style="padding-right: 3em;">
+                    <div id="header-avatar">
+                        <img src="img/avatar.svg" alt="Jane Doe" class="">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="block shadow-container">
-            <div class="container">
+            <div class="container padding-4">
                 <!-- Biography -->
                 <div class="row" id="biography">
                     <div class="col-small">
-                        <div class="avatar-container">
-                            <img src="img/avatar.svg" alt="Jane Doe">
-                        </div>
+                        <div class="biography-icon">
+                            <div class="avatar-container">
+                                <img src="img/avatar.svg" alt="Jane Doe">
+                            </div>
 
-                        <div class="text-container">
-                            <p class="headline3 text-bold">Jane Doe</p>
-                            <p class="text-header-color text-small">Full-Stack Developer</p>
+                            <div class="text-container">
+                                <p class="headline3 text-bold">Jane Doe</p>
+                                <p class="text-header-color text-small">Full-Stack Developer</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-large" id="biography">
@@ -58,12 +62,13 @@
                             Francisco. I
                             code and create web elements for amazing people around the world. I like work with new
                             people.
-                            New people new Experiences.<br />
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            New people new Experiences.</p>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                             commodo
                             consequat. Duis aute irure dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                             sed
-                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>
                             Consectetur adipisicing elit, lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt
                             ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -77,39 +82,37 @@
                     <h2 class="headline3">
                         <span class="headline-circle"></span>What I do?
                     </h2>
-                    <div class="row margin-top-3">
-                        <div class="cards">
-                            <div class="card">
-                                <div class="card-icon">
-                                    <img src="img/pencil-alt-solid.svg" alt="Web Design">
-                                </div>
-                                <div class="card-text">
-                                    <h2>Web Design</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
+                    <div class="cards  margin-top-3">
+                        <div class="card">
+                            <div class="card-icon">
+                                <img src="img/pencil-alt-solid.svg" alt="Web Design">
                             </div>
-
-                            <div class="card">
-                                <div class="card-icon">
-                                    <img src="img/desktop-solid.svg" alt="Web Development">
-                                </div>
-                                <div class="card-text">
-                                    <h2>Web Development</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
+                            <div class="card-text">
+                                <h2>Web Design</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
                             </div>
+                        </div>
 
-                            <div class="card">
-                                <div class="card-icon">
-                                    <img src="img/bullseye-solid.svg" alt="Seo Marketing">
-                                </div>
-                                <div class="card-text">
-                                    <h2>Seo Marketing</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
+                        <div class="card">
+                            <div class="card-icon">
+                                <img src="img/desktop-solid.svg" alt="Web Development">
+                            </div>
+                            <div class="card-text">
+                                <h2>Web Development</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-icon">
+                                <img src="img/bullseye-solid.svg" alt="Seo Marketing">
+                            </div>
+                            <div class="card-text">
+                                <h2>Seo Marketing</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
                             </div>
                         </div>
                     </div>
@@ -119,36 +122,35 @@
                     <h2 class="headline3">
                         <span class="headline-circle"></span>Awards
                     </h2>
-                    <div class="row margin-top-1">
-                        <div class="cards">
-                            <div class="card">
-                                <img class="card-award-icon" src="img/trophy-solid.svg" alt="Creative Designer">
-                                <div class="card-text">
-                                    Creative Designer
-                                </div>
+                    <div class="awards margin-top-1">
+                        <div class="award">
+                            <img class="card-award-icon" src="img/trophy-solid.svg" alt="Creative Designer">
+                            <div class="award-text">
+                                Creative Designer
                             </div>
-
-                            <div class="card">
-                                <img class="card-award-icon" src="img/trophy-solid.svg" alt="Yearly Best Performer">
-                                <div class="card-text">
-                                    Yearly Best Performer
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img class="card-award-icon" src="img/trophy-solid.svg" alt="Best Learner Award">
-                                <div class="card-text">
-
-                                    Best Learner Award
-                                </div>
-                            </div>
-
                         </div>
+
+                        <div class="award">
+                            <img class="card-award-icon" src="img/trophy-solid.svg" alt="Yearly Best Performer">
+                            <div class="award-text">
+                                Yearly Best Performer
+                            </div>
+                        </div>
+                        <div class="award">
+                            <img class="card-award-icon" src="img/trophy-solid.svg" alt="Best Learner Award">
+                            <div class="award-text">
+
+                                Best Learner Award
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
+
         </div>
         <div class="block">
-            <div class="container">
+            <div class="container padding-4">
                 <!-- Experience -->
                 <div style="width: 100%;" id="experience">
                     <h2 class="headline3">
@@ -156,17 +158,15 @@
                     </h2>
                     <!-- Google LLC - Sr. Front-End Enginner -->
                     <div class="list">
-                        <div class="row">
-                            <div class="col-small">
-                                <div class="list-prefix">
-                                    <p>Feb 2021 - Present</p>
-                                    <span class="list-prefix-fulltime">
-                                        Full Time
-                                    </span>
-                                </div>
+                        <div class="list-item">
+                            <div class="list-prefix">
+                                <p>Feb 2021 - Present</p>
+                                <span class="list-prefix-fulltime">
+                                    Full Time
+                                </span>
                             </div>
-                            <div class="list-divider"></div>
-                            <div class="col-large">
+                            <!-- <div class="list-divider"></div> -->
+                            <div class="list-suffix">
                                 <div class="list-header">
                                     <h2 class="list-title">
                                         Google LLC - Sr. Front-end Engineer
@@ -184,76 +184,247 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!-- Ridian IT - Visual Designer -->
-                <div class="list">
-                    <div class="row">
-                        <div class="col-small">
+                        <!-- Ridian IT - Visual Designer -->
+                        <div class="list-item">
                             <div class="list-prefix">
                                 <p>Mar 2020 - Present</p>
                                 <span class="list-prefix-parttime">
                                     Part Time
                                 </span>
                             </div>
-                        </div>
-                        <div class="list-divider"></div>
-                        <div class="col-large">
-                            <div class="list-header">
-                                <h2 class="list-title">
-                                    Ridian IT - Visual Designer
-                                </h2>
+                            <!-- <div class="list-divider"></div> -->
+                            <div class="list-suffix">
+                                <div class="list-header">
+                                    <h2 class="list-title">
+                                        Ridian IT - Visual Designer
+                                    </h2>
+                                </div>
+                                <div class="list-body">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                        aute
+                                        irure
+                                        dolor.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="list-body">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                    nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irure
-                                    dolor.
-                                </p>
-                            </div>
                         </div>
-                    </div>
-
-                </div>
-                <!-- IB Themes - Animation Artist -->
-                <div class="list">
-                    <div class="row">
-                        <div class="col-small">
+                        <!-- IB Themes - Animation Artist -->
+                        <div class="list-item">
                             <div class="list-prefix">
                                 <p>Jan 2019 - Present</p>
                                 <span class="list-prefix-fulltime">
                                     Full Time
                                 </span>
                             </div>
-                        </div>
-                        <div class="list-divider"></div>
-                        <div class="col-large">
-                            <div class="list-header">
-                                <h2 class="list-title">
-                                    IB Themes - Animation Artist
-                                </h2>
+                            <!-- <div class="list-divider"></div> -->
+                            <div class="list-suffix">
+                                <div class="list-header">
+                                    <h2 class="list-title">
+                                        IB Themes - Animation Artist
+                                    </h2>
+                                </div>
+                                <div class="list-body">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis
+                                        nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis
+                                        aute
+                                        irure
+                                        dolor.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="list-body">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                    nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irure
-                                    dolor.
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- My Portfolio -->
+                <div id="my-portofolio" style="width: 100%;">
+                    <h2 class="headline3">
+                        <span class="headline-circle"></span>My Portofolio
+                    </h2>
+                    <div class=" margin-top-1 portfolio-cards">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="Portofolio 1">
+                            </div>
+                            <div class="portfolio-text margin-top-1">
+                                <div>
+                                    <p class="headline3 text-bold">Lorem ipsum</p>
+                                    <p class="text-small">07/13/2305</p>
+                                </div>
+                                <p class="margin-top-1">
+                                    Et enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip.
                                 </p>
                             </div>
                         </div>
-
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="Portofolio 1">
+                            </div>
+                            <div class="portfolio-text margin-top-1">
+                                <div>
+                                    <p class="headline3 text-bold">Lorem ipsum</p>
+                                    <p class="text-small">07/13/2305</p>
+                                </div>
+                                <p class="margin-top-1">
+                                    Et enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="Portofolio 1">
+                            </div>
+                            <div class="portfolio-text margin-top-1">
+                                <div>
+                                    <p class="headline3 text-bold">Lorem ipsum</p>
+                                    <p class="text-small">07/13/2305</p>
+                                </div>
+                                <p class="margin-top-1">
+                                    Et enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="Portofolio 1">
+                            </div>
+                            <div class="portfolio-text margin-top-1">
+                                <div>
+                                    <p class="headline3 text-bold">Lorem ipsum</p>
+                                    <p class="text-small">07/13/2305</p>
+                                </div>
+                                <p class="margin-top-1">
+                                    Et enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="Portofolio 1">
+                            </div>
+                            <div class="portfolio-text margin-top-1">
+                                <div>
+                                    <p class="headline3 text-bold">Lorem ipsum</p>
+                                    <p class="text-small">07/13/2305</p>
+                                </div>
+                                <p class="margin-top-1">
+                                    Et enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <img src="https://dummyimage.com/640x360/f7f7ff/555" alt="Portofolio 1">
+                            </div>
+                            <div class="portfolio-text margin-top-1">
+                                <div>
+                                    <p class="headline3 text-bold">Lorem ipsum</p>
+                                    <p class="text-small">07/13/2305</p>
+                                </div>
+                                <p class="margin-top-1">
+                                    Et enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip.
+                                </p>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
         </div>
-    </div>
+        <div class="block shadow-container">
+            <div class="container padding-4">
+                <!-- Contact -->
+                <div id="contact" style="width: 100%;">
+                    <h2 class="headline3">
+                        <span class="headline-circle"></span>Contact
+                    </h2>
+                    <div class="row margin-top-3">
+                        <div class="col-medium">
+                            <p class="headline3 text-bold">
+                                What's your story? Get in touch
+                            </p>
+                            <p>
+                                Always available for freelancing if the right project comes along.
+                                Feel free to contact me.
+                            </p>
+                            <!-- Icons for address, mail and mobile -->
+                            <div class="icons text-bold">
+                                <div class="icon">
+                                    <img src="img/map-marker-alt-solid.svg" alt="Address">
+                                    <p>Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France</p>
+                                </div>
+                                <div class="icon">
+                                    <img src="img/envelope-regular.svg" alt="Mail">
+                                    <p>support@domain.com</p>
+                                </div>
+                                <div class="icon">
+                                    <img src="img/mobile-alt-solid.svg" alt="Mobile">
+                                    <p>555-2368</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Form -->
+                        <div class="col-medium">
+                            <p class="headline3 text-bold">
+                                Say Something
+                            </p>
+                            <div class="form-row">
+                                <input type="text" placeholder="Full name" class="text-input">
+                                <input type="text" placeholder="Email address" class="text-input">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Subject" class="text-input">
+                            </div>
+                            <div>
+                                <textarea name="message" id="message" cols="30" rows="5" placeholder="Type comment"
+                                    class="text-input"></textarea>
+                            </div>
+                            <button class="button">Send Message</button>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.991626110943!2d2.291906376649646!3d48.85837007133212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2zRWlmZmVsb3ZhIHbEm8W-!5e0!3m2!1scs!2scz!4v1714722603919!5m2!1scs!2scz"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container footer-body">
+                <div class="social-icons">
+                    <!-- FB -->
+                    <img src="img/facebook-square-brands.svg" alt="Facebook">
+                    <!-- Twitter -->
+                    <img src="img/twitter-square-brands.svg" alt="Twitter">
+                </div>
+                <div class="copyright">
+                    <p>&copy; Lorem ipsum dolor sit amet 2024</p>
+                </div>
+            </div>
+        </div>
+    </main>
 
 </body>
 
